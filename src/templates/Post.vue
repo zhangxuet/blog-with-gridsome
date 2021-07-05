@@ -32,8 +32,8 @@
 </template>
 
 <page-query>
-    query {
-        post: strapiPost (id: 1) {
+    query ($id: ID!) {
+        post: strapiPost (id: $id) {
             id
             title
             content
